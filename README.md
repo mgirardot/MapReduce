@@ -13,7 +13,7 @@ Here is a sample:
 NM_000014	A2M	AAAGAAU	10090	0	0	0	0	1	0	1	0	mmu-miR-186	-0.078	NULL
 NM_000014	A2M	AAUCUCU	10090	0	0	0	0	1	0	1	0	mmu-miR-216b	-0.188	0.073
 ```
-The second column is the mRNA gene’s name and the 13th column is the name of the microRNA predicted to interact with the mRNA. From this database I selected a sample of 2000 transactions out of $$ 2.10^6 $$. (`sample-mmu-miR.txt`).
+The second column is the mRNA gene’s name and the 13th column is the name of the microRNA predicted to interact with the mRNA. From this database I selected a sample of 2000 transactions out of 2.10^6. (`sample-mmu-miR.txt`).
 
 The first step is to generate the transactions : `mRNA		miR1	…	miRn`.
 The Map task is performed by [generateTransactionMapper.java](\src\main\java\fr\cnrs\igmm\mg\generateTransactionMapper.java) and the reducer is [generateTransactionsReducer.java](\src\main\java\fr\cnrs\igmm\mg\generateTransactionReducer.java).
