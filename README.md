@@ -78,7 +78,8 @@ mgirardot@rfl-bioinfo:~/Bureau$ hadoop fs -cat output/part* | wc -l
 |81294			 |61194 |16142 |3376  |504   |69    |7     |0     |
 |**freq**        |0.75  |0.19  |0.04  |0.006 |0.0008|8e-5  |0     |
 
-This show that the vast majority of the microRNA's pairs (75%)appears only once in this sample of 2000 predictions. However, we can see that a significant proportion of miR pairs (25%) appear on 2 or more targets.
+This show that the vast majority of the microRNA's pairs (75%) appears only once in this sample of 2000 predictions. However, we can see that a significant proportion of miR pairs (25%) appear on 2 or more targets.
 
-**Conclusion**
+**Conclusion**:
+
 The Market Basket Analysis perfomed with the Hadoop framework allows to find groups of microRNAs that cooperate frequently. However, this analysis performed for pairs is very inefficient for tuples of 3 microRNAs or more due to the exponential increase of combinaisons to consider.
